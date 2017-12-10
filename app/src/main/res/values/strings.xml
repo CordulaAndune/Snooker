@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SnookerCounter</string>
+    <string name="player1">Player 1</string>
+    <string name="player2">Player 2</string>
+    <string name="reset">Reset</string>
+    <string name="plus1">+1</string>
+    <string name="plus2">+2</string>
+    <string name="plus3">+3</string>
+    <string name="plus4">+4</string>
+    <string name="plus5">+5</string>
+    <string name="plus6">+6</string>
+    <string name="plus7">+7</string>
+    <string name="breakScore">Break:</string>
+    <string name="queue">Queue</string>
+</resources>

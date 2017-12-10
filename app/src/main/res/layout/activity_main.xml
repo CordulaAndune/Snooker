@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/table1"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.andriod.snookercounter.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/scoreView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/marginButton">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/namePlayer1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:hint="@string/player1"
+                    android:padding="@dimen/marginButton"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textSize="@dimen/sizePlayer" />
+
+                <TextView
+                    android:id="@+id/scoreView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/sizeScore" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginButton"
+                    android:layout_marginRight="@dimen/marginButton"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/breakView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/breakScore"
+                        android:textSize="@dimen/sizePlayer" />
+
+                    <TextView
+                        android:id="@+id/scoreBreak1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@id/breakView1"
+                        android:gravity="end"
+                        android:text=""
+                        android:textSize="@dimen/sizePlayer" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/marginRelLayout"
+                    android:layout_marginTop="@dimen/marginRelLayout"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/redButton1"
+                        android:layout_width="@dimen/buttonSize"
+                        android:layout_height="@dimen/buttonSize"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="@dimen/marginButton"
+                        android:layout_marginLeft="@dimen/marginButton"
+                        android:layout_marginTop="@dimen/marginButton"
+                        android:background="@drawable/redsolid"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="scoreRed1"
+                        android:text="@string/plus1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/textButton"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/yellowButton1"
+                        android:layout_width="@dimen/buttonSize"
+                        android:layout_height="@dimen/buttonSize"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="@dimen/marginButton"
+                        android:layout_toRightOf="@id/redButton1"
+                        android:background="@drawable/yellowsolid"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="scoreYellow1"
+                        android:text="@string/plus2"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/textButton"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/greenButton1"
+                        android:layout_width="@dimen/buttonSize"
+                        android:layout_height="@dimen/buttonSize"
+                        android:layout_below="@id/redButton1"
+                        android:layout_marginBottom="@dimen/marginButton"
+                        android:layout_marginLeft="@dimen/marginButton"
+                        android:layout_marginTop="@dimen/marginButton"
+
+                        android:background="@drawable/greensolid"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="scoreGreen1"
+                        android:text="@string/plus3"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/textButton"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/brownButton1"
+                        android:layout_width="@dimen/buttonSize"
+                        android:layout_height="@dimen/buttonSize"
+                        android:layout_below="@id/redButton1"
+                        android:layout_margin="@dimen/marginButton"
+                        android:layout_toRightOf="@id/greenButton1"
+                        android:background="@drawable/brownsolid"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="scoreBrown1"
+                        android:text="@string/plus4"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/textButton"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/blueButton1"
+                        android:layout_width="@dimen/buttonSize"
+                        android:layout_height="@dimen/buttonSize"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/greenButton1"
+                        android:layout_marginBottom="@dimen/marginButton"
+                        android:layout_marginLeft="@dimen/marginButton"
+                        android:layout_marginTop="@dimen/marginButton"
+                        android:background="@drawable/bluesolid"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="scoreBlue1"
+                        android:text="@string/plus5"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/textButton"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/pinkButton1"
+                        android:layout_width="@dimen/buttonSize"
+                        android:layout_height="@dimen/buttonSize"
+                        android:layout_below="@id/brownButton1"
+                        android:layout_margin="@dimen/marginButton"
+                        android:layout_toRightOf="@id/blueButton1"
+                        android:background="@drawable/pinksolid"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="scorePink1"
+                        android:text="@string/plus6"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/textButton"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/blackButton1"
+                        android:layout_width="@dimen/buttonSize"
+                        android:layout_height="@dimen/buttonSize"
+                        android:layout_below="@id/pinkButton1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/marginButton"
+                        android:background="@drawable/blacksolid"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="scoreBlack1"
+                        android:text="@string/plus7"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/textButton"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/queue"
+                android:src="@drawable/queue" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/namePlayer2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:hint="@string/player2"
+                    android:padding="@dimen/marginButton"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textSize="@dimen/sizePlayer" />
+
+                <TextView
+                    android:id="@+id/scoreView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/sizeScore" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginButton"
+                    android:layout_marginRight="@dimen/marginButton">
+
+                    <TextView
+                        android:id="@+id/breakView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/breakScore"
+                        android:textSize="@dimen/sizePlayer" />
+
+                    <TextView
+                        android:id="@+id/scoreBreak2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@id/breakView2"
+                        android:gravity="end"
+                        android:text=""
+                        android:textSize="@dimen/sizePlayer" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/marginRelLayout"
+                    android:layout_marginTop="@dimen/marginRelLayout"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/redButton2"
+                        android:layout_width="@dimen/buttonSize"
+                        android:layout_height="@dimen/buttonSize"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="@dimen/marginButton"
+                        android:background="@drawable/redsolid"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="scoreRed2"
+                        android:text="@string/plus1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/textButton"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/yellowButton2"
+                        android:layout_width="@dimen/buttonSize"
+                        android:layout_height="@dimen/buttonSize"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="@dimen/marginButton"
+                        android:layout_marginRight="@dimen/marginButton"
+                        android:layout_marginTop="@dimen/marginButton"
+                        android:layout_toRightOf="@id/redButton2"
+                        android:background="@drawable/yellowsolid"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="scoreYellow2"
+                        android:text="@string/plus2"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/textButton"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/greenButton2"
+                        android:layout_width="@dimen/buttonSize"
+                        android:layout_height="@dimen/buttonSize"
+                        android:layout_below="@id/redButton2"
+                        android:layout_margin="@dimen/marginButton"
+                        android:background="@drawable/greensolid"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="scoreGreen2"
+                        android:text="@string/plus3"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/textButton"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/brownButton2"
+                        android:layout_width="@dimen/buttonSize"
+                        android:layout_height="@dimen/buttonSize"
+                        android:layout_below="@id/redButton2"
+                        android:layout_marginBottom="@dimen/marginButton"
+                        android:layout_marginRight="@dimen/marginButton"
+                        android:layout_marginTop="@dimen/marginButton"
+                        android:layout_toRightOf="@id/greenButton2"
+                        android:background="@drawable/brownsolid"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="scoreBrown2"
+                        android:text="@string/plus4"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/textButton"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/blueButton2"
+                        android:layout_width="@dimen/buttonSize"
+                        android:layout_height="@dimen/buttonSize"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/greenButton2"
+                        android:layout_margin="@dimen/marginButton"
+                        android:background="@drawable/bluesolid"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="scoreBlue2"
+                        android:text="@string/plus5"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/textButton"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/pinkButton2"
+                        android:layout_width="@dimen/buttonSize"
+                        android:layout_height="@dimen/buttonSize"
+                        android:layout_below="@id/brownButton2"
+                        android:layout_marginBottom="@dimen/marginButton"
+                        android:layout_marginRight="@dimen/marginButton"
+                        android:layout_marginTop="@dimen/marginButton"
+                        android:layout_toRightOf="@id/blueButton2"
+                        android:background="@drawable/pinksolid"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="scorePink2"
+                        android:text="@string/plus6"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/textButton"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/blackButton2"
+                        android:layout_width="@dimen/buttonSize"
+                        android:layout_height="@dimen/buttonSize"
+                        android:layout_below="@id/pinkButton2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/marginButton"
+                        android:background="@drawable/blacksolid"
+                        android:fontFamily="sans-serif-medium"
+                        android:onClick="scoreBlack2"
+                        android:text="@string/plus7"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/textButton"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scoreView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:background="@drawable/resetbutton"
+            android:onClick="resetScores"
+            android:text="@string/reset"
+            android:textColor="@color/colorPrimary" />
+
+    </RelativeLayout>
+</ScrollView>
+

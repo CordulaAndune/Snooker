@@ -28,14 +28,14 @@
                 android:orientation="vertical">
 
                 <EditText
-                    style="@style/EditTextStyle"
-                    android:padding="@dimen/marginButton"
                     android:id="@+id/namePlayer1"
-                    android:hint="@string/player1"/>
+                    style="@style/EditTextStyle"
+                    android:hint="@string/player1"
+                    android:padding="@dimen/marginButton" />
 
                 <TextView
-                    style="@style/ScoreStyle"
                     android:id="@+id/scoreView1"
+                    style="@style/ScoreStyle"
                     android:text="" />
 
                 <RelativeLayout
@@ -46,14 +46,14 @@
                     android:gravity="center">
 
                     <TextView
-                        style="@style/BreakStyle"
                         android:id="@+id/breakView1"
+                        style="@style/BreakStyle"
                         android:text="@string/breakScore"
                         android:textSize="@dimen/sizePlayer" />
 
                     <TextView
-                        style="@style/BreakStyle"
                         android:id="@+id/scoreBreak1"
+                        style="@style/BreakStyle"
                         android:layout_alignParentRight="true"
                         android:layout_toRightOf="@id/breakView1"
                         android:gravity="end"
@@ -69,8 +69,8 @@
                     android:gravity="center">
 
                     <Button
-                        style="@style/ButtonStyle"
                         android:id="@+id/redButton1"
+                        style="@style/ButtonStyle"
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentTop="true"
                         android:layout_marginBottom="@dimen/marginButton"
@@ -81,8 +81,8 @@
                         android:text="@string/plus1" />
 
                     <Button
-                        style="@style/ButtonStyle"
                         android:id="@+id/yellowButton1"
+                        style="@style/ButtonStyle"
                         android:layout_alignParentTop="true"
                         android:layout_margin="@dimen/marginButton"
                         android:layout_toRightOf="@id/redButton1"
@@ -91,8 +91,8 @@
                         android:text="@string/plus2" />
 
                     <Button
-                        style="@style/ButtonStyle"
                         android:id="@+id/greenButton1"
+                        style="@style/ButtonStyle"
                         android:layout_below="@id/redButton1"
                         android:layout_marginBottom="@dimen/marginButton"
                         android:layout_marginLeft="@dimen/marginButton"
@@ -102,8 +102,8 @@
                         android:text="@string/plus3" />
 
                     <Button
-                        style="@style/ButtonStyle"
                         android:id="@+id/brownButton1"
+                        style="@style/ButtonStyle"
                         android:layout_below="@id/redButton1"
                         android:layout_margin="@dimen/marginButton"
                         android:layout_toRightOf="@id/greenButton1"
@@ -112,8 +112,8 @@
                         android:text="@string/plus4" />
 
                     <Button
-                        style="@style/ButtonStyle"
                         android:id="@+id/blueButton1"
+                        style="@style/ButtonStyle"
                         android:layout_alignParentLeft="true"
                         android:layout_below="@id/greenButton1"
                         android:layout_marginBottom="@dimen/marginButton"
@@ -124,8 +124,8 @@
                         android:text="@string/plus5" />
 
                     <Button
-                        style="@style/ButtonStyle"
                         android:id="@+id/pinkButton1"
+                        style="@style/ButtonStyle"
                         android:layout_below="@id/brownButton1"
                         android:layout_margin="@dimen/marginButton"
                         android:layout_toRightOf="@id/blueButton1"
@@ -134,8 +134,8 @@
                         android:text="@string/plus6" />
 
                     <Button
-                        style="@style/ButtonStyle"
                         android:id="@+id/blackButton1"
+                        style="@style/ButtonStyle"
                         android:layout_below="@id/pinkButton1"
                         android:layout_centerHorizontal="true"
                         android:layout_margin="@dimen/marginButton"
@@ -147,7 +147,7 @@
             </LinearLayout>
 
             <ImageView
-                android:layout_width="10dp"
+                android:layout_width="@dimen/queue_width"
                 android:layout_height="match_parent"
                 android:contentDescription="@string/queue"
                 android:src="@drawable/queue" />
@@ -159,14 +159,14 @@
                 android:orientation="vertical">
 
                 <EditText
-                    style="@style/EditTextStyle"
                     android:id="@+id/namePlayer2"
+                    style="@style/EditTextStyle"
                     android:hint="@string/player2"
                     android:padding="@dimen/marginButton"/>
 
                 <TextView
-                    style="@style/ScoreStyle"
                     android:id="@+id/scoreView2"
+                    style="@style/ScoreStyle"
                     android:text="" />
 
                 <RelativeLayout
@@ -176,13 +176,13 @@
                     android:layout_marginRight="@dimen/marginButton">
 
                     <TextView
-                        style="@style/BreakStyle"
                         android:id="@+id/breakView2"
+                        style="@style/BreakStyle"
                         android:text="@string/breakScore" />
 
                     <TextView
-                        style="@style/BreakStyle"
                         android:id="@+id/scoreBreak2"
+                        style="@style/BreakStyle"
                         android:layout_alignParentRight="true"
                         android:layout_toRightOf="@id/breakView2"
                         android:gravity="end"
@@ -198,8 +198,8 @@
                     android:gravity="center">
 
                     <Button
-                        style="@style/ButtonStyle"
                         android:id="@+id/redButton2"
+                        style="@style/ButtonStyle"
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentTop="true"
                         android:layout_margin="@dimen/marginButton"
@@ -208,8 +208,8 @@
                         android:text="@string/plus1" />
 
                     <Button
-                        style="@style/ButtonStyle"
                         android:id="@+id/yellowButton2"
+                        style="@style/ButtonStyle"
                         android:layout_alignParentTop="true"
                         android:layout_marginBottom="@dimen/marginButton"
                         android:layout_marginRight="@dimen/marginButton"
@@ -220,8 +220,8 @@
                         android:text="@string/plus2" />
 
                     <Button
-                        style="@style/ButtonStyle"
                         android:id="@+id/greenButton2"
+                        style="@style/ButtonStyle"
                         android:layout_below="@id/redButton2"
                         android:layout_margin="@dimen/marginButton"
                         android:background="@drawable/greensolid"
@@ -229,8 +229,8 @@
                         android:text="@string/plus3" />
 
                     <Button
-                        style="@style/ButtonStyle"
                         android:id="@+id/brownButton2"
+                        style="@style/ButtonStyle"
                         android:layout_below="@id/redButton2"
                         android:layout_marginBottom="@dimen/marginButton"
                         android:layout_marginRight="@dimen/marginButton"
@@ -241,8 +241,8 @@
                         android:text="@string/plus4"/>
 
                     <Button
-                        style="@style/ButtonStyle"
                         android:id="@+id/blueButton2"
+                        style="@style/ButtonStyle"
                         android:layout_alignParentLeft="true"
                         android:layout_below="@id/greenButton2"
                         android:layout_margin="@dimen/marginButton"
@@ -251,8 +251,8 @@
                         android:text="@string/plus5" />
 
                     <Button
-                        style="@style/ButtonStyle"
                         android:id="@+id/pinkButton2"
+                        style="@style/ButtonStyle"
                         android:layout_below="@id/brownButton2"
                         android:layout_marginBottom="@dimen/marginButton"
                         android:layout_marginRight="@dimen/marginButton"
@@ -263,8 +263,8 @@
                         android:text="@string/plus6" />
 
                     <Button
-                        style="@style/ButtonStyle"
                         android:id="@+id/blackButton2"
+                        style="@style/ButtonStyle"
                         android:layout_below="@id/pinkButton2"
                         android:layout_centerHorizontal="true"
                         android:layout_margin="@dimen/marginButton"

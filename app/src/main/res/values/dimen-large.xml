@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin_large">48dp</dimen>
+    <dimen name="activity_vertical_margin_large">52dp</dimen>
+    <dimen name="sizePlayer_large">36sp</dimen>
+    <dimen name="sizeScore_large">64sp</dimen>
+    <dimen name="buttonSize_large">64dp</dimen>
+    <dimen name="textButton_large">28sp</dimen>
+    <dimen name="marginButton_large">16dp</dimen>
+</resources>

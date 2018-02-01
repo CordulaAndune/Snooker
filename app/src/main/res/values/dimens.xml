@@ -8,12 +8,5 @@
     <dimen name="sizePlayer">24sp</dimen>
     <dimen name="textButton">20sp</dimen>
     <dimen name="marginRelLayout">10dp</dimen>
-    <dimen name="activity_horizontal_margin_large">48dp</dimen>
-    <dimen name="activity_vertical_margin_large">52dp</dimen>
-    <dimen name="sizePlayer_large">36sp</dimen>
-    <dimen name="sizeScore_large">64sp</dimen>
-    <dimen name="buttonSize_large">64dp</dimen>
-    <dimen name="textButton_large">28sp</dimen>
-    <dimen name="marginButton_large">16dp</dimen>
     <dimen name="activity_vertical_margin_land">32dp</dimen>
 </resources>

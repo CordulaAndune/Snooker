@@ -150,6 +150,7 @@
                 android:layout_width="@dimen/queue_width"
                 android:layout_height="match_parent"
                 android:contentDescription="@string/queue"
+                android:scaleType="fitStart"
                 android:src="@drawable/queue" />
 
             <LinearLayout
